@@ -1,10 +1,21 @@
 /* src/components/FlightDetail/FlightDetail.css */
 .flight-detail {
-    padding: 20px;
-    border: 1px solid #ddd;
-    margin: 20px;
-  }
-  
-  .flight-detail p {
-    margin: 10px 0;
-  }
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.flight-detail h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.flight-detail p {
+  margin: 10px 0;
+}
+
+.flight-detail p:first-child {
+  font-weight: bold;
+}
