@@ -1,6 +1,6 @@
 // src/components/FlightDetail/FlightDetail.js
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import Error from '../Error/Error';
 import './FlightDetail.css';
 
@@ -40,6 +40,7 @@ const FlightDetail = () => {
       <p>Destination: {flight.destination}</p>
       <p>Departure Time: {flight.departureTime}</p>
       <p>Status: {flight.status}</p>
+      <Link to="/" className="back-button">Back to Flight Table</Link>
     </div>
   );
 };
