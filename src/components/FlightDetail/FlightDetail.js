@@ -1,6 +1,7 @@
 // src/components/FlightDetail/FlightDetail.js
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import Error from '../Error/Error';
 import './FlightDetail.css';
 
 const FlightDetail = () => {
@@ -23,7 +24,7 @@ const FlightDetail = () => {
   }, [id]);
 
   if (error) {
-    return <div>{error}</div>;
+    return <Error message={error} />;
   }
 
   if (!flight) {

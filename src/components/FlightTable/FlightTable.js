@@ -1,6 +1,7 @@
 // src/components/FlightTable/FlightTable.js
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Error from '../Error/Error';
 import './FlightTable.css';
 
 const FlightTable = () => {
@@ -25,7 +26,7 @@ const FlightTable = () => {
   }, []);
 
   if (error) {
-    return <div>{error}</div>;
+    return <Error message={error} />;
   }
 
   return (
@@ -38,6 +39,7 @@ const FlightTable = () => {
           <th>Destination</th>
           <th>Departure Time</th>
           <th>Status</th>
+          <th>Details</th>
         </tr>
       </thead>
       <tbody>

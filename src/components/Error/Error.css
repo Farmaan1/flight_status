@@ -1,0 +1,8 @@
+/* src/components/Error/Error.css */
+.error {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid red;
+    background-color: #f8d7da;
+    color: #721c24;
+  }
