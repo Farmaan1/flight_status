@@ -1,0 +1,14 @@
+/* src/components/FlightTable/FlightTable.css */
+.flight-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .flight-table th, .flight-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .flight-table th {
+    background-color: #f2f2f2;
+  }
