@@ -1,3 +1,10 @@
+/* App.css */
+/**
+ * Global styles for the entire application.
+ * Set basic typography and layout.
+ * @module App.css
+ */
+
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;

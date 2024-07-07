@@ -1,9 +1,15 @@
-// src/components/FlightTable/FlightTable.js
+/**
+ * Component to display a table of flights fetched from an API.
+ * @module FlightTable
+ */
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Error from '../Error/Error';
 import './FlightTable.css';
-
+/**
+ * FlightTable component displays a table of flights.
+ * @returns {JSX.Element} Rendered FlightTable component
+ */
 const FlightTable = () => {
   const [flights, setFlights] = useState([]);
   const [error, setError] = useState(null);

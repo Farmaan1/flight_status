@@ -1,4 +1,12 @@
 /* src/components/FlightDetail/FlightDetail.css */
+
+/* FlightDetail.css */
+/**
+ * Styles for the FlightDetail component.
+ * Define styles for flight details and back button.
+ * @module FlightDetail.css
+ */
+
 .flight-detail {
   padding: 20px;
   margin: 20px;

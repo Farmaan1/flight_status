@@ -1,9 +1,15 @@
-// src/components/FlightDetail/FlightDetail.js
+/**
+ * Component to display detailed information about a specific flight.
+ * @module FlightDetail
+ */
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Error from '../Error/Error';
 import './FlightDetail.css';
-
+/**
+ * FlightDetail component displays detailed information about a specific flight.
+ * @returns {JSX.Element} Rendered FlightDetail component
+ */
 const FlightDetail = () => {
   const { id } = useParams();
   const [flight, setFlight] = useState(null);
@@ -13,10 +19,13 @@ const FlightDetail = () => {
     const fetchFlight = async () => {
       try {
         const response = await fetch(`https://flight-status-mock.core.travelopia.cloud/flights/${id}`);
+        if (!response.ok) {
+          throw new Error('Failed to fetch flight details.');
+        }
         const data = await response.json();
         setFlight(data);
       } catch (error) {
-        setError('Failed to fetch flight details.');
+        setError(error.message);
       }
     };
 

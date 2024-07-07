@@ -1,4 +1,11 @@
 /* src/components/FlightTable/FlightTable.css */
+
+/* FlightTable.css */
+/**
+ * Styles for the FlightTable component.
+ * Define table styles and hover effects.
+ * @module FlightTable.css
+ */
 .flight-table {
   width: 100%;
   border-collapse: collapse;
