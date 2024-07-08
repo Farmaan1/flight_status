@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/flight_status/static/css/main.2530cd1e.css",
+    "main.js": "/flight_status/static/js/main.a4b1c3ba.js",
+    "static/js/453.4552b608.chunk.js": "/flight_status/static/js/453.4552b608.chunk.js",
+    "index.html": "/flight_status/index.html",
+    "main.2530cd1e.css.map": "/flight_status/static/css/main.2530cd1e.css.map",
+    "main.a4b1c3ba.js.map": "/flight_status/static/js/main.a4b1c3ba.js.map",
+    "453.4552b608.chunk.js.map": "/flight_status/static/js/453.4552b608.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2530cd1e.css",
+    "static/js/main.a4b1c3ba.js"
+  ]
+}
